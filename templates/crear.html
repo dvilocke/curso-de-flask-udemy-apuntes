@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+
+{%block title%}
+    Crear Usuario
+{% endblock %}
+
+
+{%block content%}
+<form action="{{url_for('crear')}}" method="post">
+    <label>Username</label>
+    <input type="text" name="name" required>
+    <label>Email</label>
+    <input type="email" name="email" required>
+    <label>Edad</label>
+    <input type="text" name="edad" required>
+    <input type="submit" value="Guardar" />
+</form>
+{% endblock %}
